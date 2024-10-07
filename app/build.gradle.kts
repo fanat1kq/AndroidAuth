@@ -37,6 +37,9 @@ android {
         viewBinding = true
     }
 }
+dependencies {
+
+}
 
 dependencies {
 
@@ -54,8 +57,16 @@ dependencies {
     implementation(libs.retrofit.converter.gson)
     implementation(libs.gson)
     implementation(libs.okhttp.logging.interceptor)
+    implementation(libs.androidx.annotation)
+    implementation(libs.picasso)
+    implementation(libs.car.ui.lib)
+    implementation(libs.appauth)
+
+
 
     testImplementation(libs.junit)
+    testImplementation(libs.testng)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
+    androidTestImplementation(libs.junit.junit)
 }
